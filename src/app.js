@@ -1,30 +1,26 @@
 import React from 'react';
-import About from './Page/About/About';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Works from './Page/Work/Works';
-import ScrollToTop from './app/utils/ScrollToTop';
+// components
+import Banner from './components/Banner';
+import Header from './components/Header';
+import Nav from './components/Nav';
+import About from './components/About';
+import Services from './components/Services';
+import Work from './components/Work';
+import Contact from './components/Contact';
 
-import Experience from './Page/Experience/Experience';
-import Social from './components/social';
-
-const  App=()=> {
-
+const App = () => {
   return (
-
-     <BrowserRouter>
- 
-     <ScrollToTop>
-   <Switch>
-     <Route exact path= '/' component={About}/>
-     <Route  exact path = '/work' component={Works}/>
-     <Route exact path = '/experience' component={Experience}/>
-   </Switch>
-  </ScrollToTop>
-  <Social/>
- 
-   </BrowserRouter> 
-  
+    <div className='bg-site bg-no-repeat bg-cover overflow-hidden'>
+      <Header />
+      <Banner />
+      <Nav />
+      <About />
+      <Services />
+      <Work />
+      <Contact />
+      {/* <div className='h-[4000px]'></div> */}
+    </div>
   );
-}
+};
 
 export default App;
