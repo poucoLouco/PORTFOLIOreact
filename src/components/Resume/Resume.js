@@ -19,11 +19,22 @@ const Resume = () => {
                 <div className='content'>
                     {ResumeData.map((val,id) =>{
                         if(val.category === 'education'){
-                            return<Card key ={id} title={val.title} year={val.year}/>
+                            return <Card key ={id} title={val.title} year={val.year}/>
                         }
-                    })
-
-                    }
+                    })}
+                </div>
+            </div>
+            <div className='left'>
+                <div className='heading'>
+                    <h4>2008-2013</h4>
+                    <h1>EXPERIENCE</h1>
+                </div>
+                <div className='content'>
+                    {ResumeData.map((val,id) =>{
+                        if(val.category === 'experience'){
+                            return <Card key ={id} title={val.title} year={val.year}/>
+                        }
+                    })}
                 </div>
             </div>
         </div>

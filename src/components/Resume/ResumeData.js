@@ -6,7 +6,7 @@ const ResumeData = [
         title:'string',
         desc:'string',
     },
-    {gjtyjtjryjryjry
+    {
         id:1,
         category: 'string',
         year:'string',
