@@ -1,5 +1,6 @@
 import React from 'react'
-import Card from '../Projects/Card'
+import Card from './Card'
+import ResumeData from './ResumeData'
 
 const Resume = () => {
   return (
