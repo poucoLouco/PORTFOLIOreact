@@ -1,0 +1,42 @@
+header{
+    height: 10vh;
+    line-height: 10vh0;
+}
+header .container{
+    padding: 15px;
+}
+header ul li{
+    margin-left: 30px;
+}
+header ul li a{
+    transition: 0.5s;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.home-btn{
+    padding:18px 25px;
+    border-radius: 6px;
+    transition: 0.3s all ease;
+    cursor:pointer;
+    height:fit-content;
+    color: black;
+}
+
+
+.open{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    header ul{
+        padding:30px;
+    }
+   
+}
+
+.logo img {
+    width: 135px;
+    height: 80px;
+  
+}
